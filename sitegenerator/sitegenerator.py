@@ -57,7 +57,7 @@ class SiteGenerator(object):
     def __replace_tags(self):
         """ 
         Replaces all the {% variable %} tags in the output file with values from the replacement dictionary.
-        If no match if found in the dictionary the tag will not be replaced.
+        If no match is found in the dictionary the tag will not be replaced.
         """
 
         re_pattern_replacements = r"([{][%]\s*\S*\s*[%][}])"

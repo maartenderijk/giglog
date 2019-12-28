@@ -14,7 +14,7 @@ For example:
 {{ footer }}
 </body>
 ```
-Make sure a main.html and footer.html file are present in the template folder. 
+Make sure 'main.html' and 'footer.html' are present in the template folder. 
 
 Then use the .render method to create a complete html file.
 By default this is 'index.html'.

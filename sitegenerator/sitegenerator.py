@@ -24,16 +24,16 @@ class SiteGenerator(object):
                     templates_matches = re.findall(re_pattern_templates, line)
                     if templates_matches:
                         for template_name in templates_matches:
-                            template_content = self.read_templates(
+                            template_content = self.__read_templates(
                                 template_name)
                             writer.write(template_content)
 
                     else:
                         writer.write(line)
 
-        self.replace_tags()
+        self.__replace_tags()
 
-    def read_templates(self, template_name):
+    def __read_templates(self, template_name):
         """ 
         Returns content of all the templates with the same template tag.
         The template tag is defined as the text in the filename before the first underscore.
@@ -54,7 +54,7 @@ class SiteGenerator(object):
                 template_content += template_reader.read()
         return template_content
 
-    def replace_tags(self):
+    def __replace_tags(self):
         """ 
         Replaces all the {% variable %} tags in the output file with values from the replacement dictionary.
         If no match if found in the dictionary the tag will not be replaced.

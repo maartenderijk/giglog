@@ -19,5 +19,5 @@ snapshot_page.render()
 
 
 # Update main template with new templates
-indexpage = sitegenerator.SiteGenerator(output_file="./docs/index.html")
+indexpage = sitegenerator.SiteGenerator(output_file="./docs/new_index.html")
 indexpage.render()

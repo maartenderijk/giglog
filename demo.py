@@ -8,6 +8,7 @@ import json
 now = datetime.now()
 datestr = now.strftime(r"%Y%m%d%H%M%S")
 
+# Generate a small markup file to use in the main template. Tags with {% date %} and {% time %} are replaced
 snapshot_page = sitegenerator.SiteGenerator()
 snapshot_page.base_template = "base_snapshot.html"
 snapshot_page.output_file = "./templates/snapshot_" + datestr + ".html"

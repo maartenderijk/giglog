@@ -6,7 +6,7 @@ This package enables you to generate static HTML sites from a python script.
 ## Use
 Create a base template.
 By default this is ./templates/base.html. 
-Inside the base template other (sub)templates can be referenced
+Inside the base template other (sub)templates can be referenced.
 For example in the template file:
 ```
 <body>

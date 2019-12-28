@@ -3,7 +3,6 @@
 # Desciption
 This package enables you to generate static HTML sites from a python script. 
 
-
 ## Use
 Create a base template.
 By default this is ./templates/base.html. 
@@ -11,8 +10,8 @@ Inside the base template other (sub)templates can be referenced
 For example:
 ```
 <body>
-    {{ main }}
-	{{ footer }}
+{{ main }}
+{{ footer }}
 </body>
 ```
 Make sure a main.html and footer.html file are present in the template folder. 
@@ -42,7 +41,7 @@ s.render()
 ```
 If no match is found in the dictionary the tag will not be replaced.
 
-### Multiple (sub)templates with the same new
+### Multiple (sub)templates with the same name
 All the templates with the same template tag are rendered in the static HTML file. The template tag is defined as the text in the filename before the first underscore.
 The alfa-numerical order after the first underscore is used as render order.
 

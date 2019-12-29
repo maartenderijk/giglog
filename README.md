@@ -1,6 +1,6 @@
 # Site generator
 
-## Desciption
+## Description
 This package enables you to generate static HTML sites from a python script. 
 
 ## Use

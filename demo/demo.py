@@ -1,5 +1,5 @@
 ''' Demo site generator'''
-# Relative imports python
+# Relative imports python, all paths are relative to the SiteGenerator module. 
 import sys
 sys.path.append(".") 
 

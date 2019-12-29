@@ -2,11 +2,7 @@
 # Relative imports python, all paths are relative to the SiteGenerator module. 
 import sys
 sys.path.append(".") 
-
-from time import sleep
 from sitegenerator import SiteGenerator
-from datetime import datetime
-import json
 
 # Demo blog post data
 demo_data = [
